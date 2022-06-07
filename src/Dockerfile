@@ -14,4 +14,4 @@ ADD . /app/
 RUN pip install -r requirements.txt
 
 # Run the app
-CMD ["python", "/src/main.py"]
+CMD ["python", "src/main.py"]

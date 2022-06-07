@@ -17,7 +17,7 @@ services:
       - redis
     networks:
       - app-tier
-
+    restart: unless-stopped
 
 networks:
   app-tier:
