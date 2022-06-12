@@ -9,15 +9,15 @@ services:
     networks:
       - app-tier
     restart: unless-stopped
-  python_app:
+  backend:
     build:
-      context: .
+      context: ./src/
       dockerfile: Dockerfile
     depends_on:
       - redis
     networks:
       - app-tier
-    restart: unless-stopped
+    #restart: unless-stopped
 
 networks:
   app-tier:

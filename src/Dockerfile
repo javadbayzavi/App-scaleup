@@ -8,10 +8,10 @@ RUN mkdir /app
 WORKDIR /app/
 
 # add all files to the working directory
-ADD . /app/
+ADD ./ /app/
 
 # Install the dependencies in the requirements file.
 RUN pip install -r requirements.txt
 
 # Run the app
-CMD ["python", "src/main.py"]
+CMD ["python", "main.py"]
